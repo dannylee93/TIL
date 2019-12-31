@@ -96,3 +96,10 @@
 
 <img src="https://www.safaribooksonline.com/library/view/hands-on-machine-learning/9781491962282/assets/mlst_0405.png" style="zoom: 33%;" />
 
+
+
+## 4. 참고한 자료
+
+- 강사님 자료 (딥러닝 핵심자료 & 인공신경망 최적화 이론)
+- 개인 홈페이지 (데이터 분석하는 문과생, 싸코 / https://sacko.tistory.com/)
+- 책(케라스 창시자에게 배우는 딥러닝)
