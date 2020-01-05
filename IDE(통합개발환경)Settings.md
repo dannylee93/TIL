@@ -19,17 +19,17 @@
 
 - 아나콘다 홈페이지에서 원하는 파이썬의 버전과 OS에 맞추어서 다운로드 한다.
 
-  <img src="C:\Users\bruce0809\Images\SettingAnaconda.jpg" style="zoom:50%;" />
+  <img src="https://github.com/dannylee93/Images/blob/master/SettingAnaconda.jpg?raw=true" style="zoom:50%;" />
 
 - 기존에 설치해둔 다른버전의 파이썬/아나콘다 있다면 꼭 **삭제** 해야 충돌 발생 방지 할 수 있다.
 
 - 아래 이미지의 체크박스를 꼭 체크하기(환경변수 자동 연결)
 
-  <img src="C:\Users\bruce0809\Images\SettingAnaconda_2.jpg" style="zoom: 67%;" />
+  <img src="https://github.com/dannylee93/Images/blob/master/SettingAnaconda_2.jpg?raw=true" style="zoom: 67%;" />
 
 - 설치 후, `Anaconda Prompt` 와 `Jupyter Notebook` 이 모두 설치 되어 있는지 확인하면 완료.
 
-  ![](C:\Users\bruce0809\Images\SettingAnaconda_3.jpg)
+  <img src="https://github.com/dannylee93/Images/blob/master/SettingAnaconda_3.jpg?raw=true" style="zoom:67%;" />
 
 
 
@@ -37,11 +37,11 @@
 
 - `Anaconda Prompt` 를 찾아 우 클릭 후, "관리자 권한으로 실행" 버튼을 클릭
 
-  <img src="C:\Users\bruce0809\Images\SettingAnaconda_4.jpg" style="zoom:67%;" />
+  <img src="https://github.com/dannylee93/Images/blob/master/SettingAnaconda_4.jpg?raw=true" style="zoom:50%;" />
 
 - 아래 처럼 `conda install tensorflow==1.13.1` 을 입력해서 Tensorflow 설치하기(Uninstall 필요 시 : 'conda uninstall tensorflow')
 
-  <img src="C:\Users\bruce0809\AppData\Roaming\Typora\typora-user-images\image-20200105144242425.png" style="zoom:67%;" />
+  <img src="https://github.com/dannylee93/Images/blob/master/SettingAnaconda_5.jpg?raw=true" style="zoom:67%;" />
 
   > 관리자 권한으로 실행하는 이유는 이런 방식으로 해야 global(전역)로 설치 되어 일부에서 오류가 생기는 것을 방지할 수 있다고 한다.
 
@@ -53,7 +53,7 @@
 
   3. `tf.__version__`
 
-     ![](C:\Users\bruce0809\Images\SettingAnaconda_6.jpg)
+     ![](https://github.com/dannylee93/Images/blob/master/SettingAnaconda_6.jpg?raw=true)
 
 
 
@@ -78,7 +78,7 @@
 
 - Conda install tensorflow 명령어로 설치 했을때, `conda verification Error` 가 발생한 경우
 
-  ![](C:\Users\bruce0809\Images\SettingAnaconda_7.JPG)
+  ![](https://github.com/dannylee93/Images/blob/master/SettingAnaconda_7.JPG?raw=true)
 
   - `conda clean--all`
   - `conda install tensorflow`
