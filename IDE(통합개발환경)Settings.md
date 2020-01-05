@@ -153,7 +153,7 @@
      - `line height` : 150 
      ```
 
-   - 이 외에도 밖은 조합도 있다.
+   - 이 외에도 밝은 조합도 있다.
 
      ```shell
      jt -t solarizedl -T -N -f bitstream -fs 10 -nf opensans -nfs 11 -tf robotosans -tfs 10 -cellw 1140 -lineh 150
