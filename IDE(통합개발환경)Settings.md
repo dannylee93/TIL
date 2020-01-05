@@ -1,4 +1,4 @@
-Anaconda로 파이썬 개발 환경 셋팅
+# Anaconda로 파이썬 개발 환경 셋팅
 
 > Anaconda는 파이썬과 그와 관련된 파이썬의 라이브러리들을 하나로 묶어 둔 일종의 배포판이다. Pandas, Scikit-Learn 등의 라이브러리를 기본적으로 포함한다.
 
