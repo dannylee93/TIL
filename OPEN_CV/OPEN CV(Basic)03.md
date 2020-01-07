@@ -19,7 +19,7 @@
   - M : 변환 행렬
   - dsize : Manual Size
 
-   ![]()
+   <img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)00.jpg?raw=true" style="zoom: 67%;" />
 
   ```python
   import cv2 
@@ -43,7 +43,7 @@
 
 - ##### 이미지 회전(row한 버전): 
 
-  ![]()
+  <img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)01.jpg?raw=true" style="zoom:67%;" />
 
   ```python
   import cv2
@@ -69,7 +69,7 @@
 
   > 넘파이 모듈의 파이 범주율을 활용하여 계산한다.
 
-  ![]()
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)02.jpg?raw=true)
 
 - ##### 이미지 회전(회전에 대한 직접적인 변환행렬 만듦) : `cv2.getRotationMatrix2D(center, angle, scale)`
 
@@ -96,7 +96,7 @@
 
   > 위에 row한 버전과는 다르게,  sin-cos 공식을 사용하지 않고 간단하게 모듈 사용했다. 
 
-  ![]()
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)03.jpg?raw=true)
 
 - ##### 이미지 회전(flip 해보는 버전) :  `cv2.flip(img, 0or1)`
 
@@ -119,7 +119,7 @@
 
   > .flip() 의 설명을 보면 `flip(src, flipCode[, dst])` 이라고 나와 있는데 여기서 dst는 destination의 약자라고 한다. Open CV에서는 주로 함수가 끝나면 저장될 공간을 지칭한다고 한다.
 
-  ![]()
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)04.jpg?raw=true)
 
 
 
@@ -166,7 +166,7 @@
   >
   > circle 함수로 정의한 공간은 변환과 전혀 관련 없다. 위치가 어떻게 변화했는지 깃발 찍고 확인하는 용도.
 
-  ![]()
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)05.jpg?raw=true)
 
   - `cv2.circle(img, center, radius, color[, thickness[, lineType[, shift]]])`
 
@@ -217,7 +217,7 @@
 
   > 4가지 좌표의 pts 정의로 ()에서 위치는 각각 (좌상, 좌하, 우상, 우하) 이다 이미지 옆의 좌표숫자를 잘 기억하자
 
-  ![]()
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)06.jpg?raw=true)
 
   
 
@@ -290,7 +290,7 @@
   plt.show()
   ```
 
-  ![]()
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)07.jpg?raw=true)
 
 #### (2) 가우시안 블러 :
 
@@ -311,7 +311,7 @@
   plt.show()
   ```
 
-  ![]()
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)08.jpg?raw=true)
 
 - **가우시안 분포(Gaussian distribution)이란? :** 
 
@@ -356,7 +356,7 @@
   cv2.destroyAllWindows()
   ```
 
-  
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)09.JPG?raw=true)
 
 #### (4) 바이레터럴 필터(BilateralFilter):
 
@@ -390,7 +390,7 @@
 
   > 원본 데이터는 사각형 1개이다.
 
-  ![]()
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering)10.JPG?raw=true)
 
 
 
