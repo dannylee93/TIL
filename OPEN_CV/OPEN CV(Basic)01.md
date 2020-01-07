@@ -31,7 +31,7 @@
   plt.show
   ```
 
-  ![](https://github.com/dannylee93/Images/blob/master/matplotlib_line.jpg?raw=true)
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/matplotlib_line.jpg?raw=true)
 
 -  사각형 그리기 : `cv2.rectangle(img, start, end, color[, thickness, lineType])`
 
@@ -58,7 +58,7 @@
   plt.show
   ```
 
-  ![](https://github.com/dannylee93/Images/blob/master/matplotlib_line2.jpg?raw=true)
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/matplotlib_line2.jpg?raw=true)
 
 - 세개의 사각형 한번에 그리기:
 
@@ -79,7 +79,7 @@
   cv2.destroyAllWindows()
   ```
 
-  <img src="https://github.com/dannylee93/Images/blob/master/matplotlib_line3.jpg?raw=true" style="zoom:67%;" />
+  <img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/matplotlib_line3.jpg?raw=true" style="zoom:67%;" />
 
 - 다각형 그리기:`cv2.polylines(img, points, isClosed, color[, thickness, lineType])`
 
@@ -104,7 +104,7 @@
   plt.show
   ```
 
-  ![](https://github.com/dannylee93/Images/blob/master/matplotlib_line4.jpg?raw=true)
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/matplotlib_line4.jpg?raw=true)
 
   ```python
   import cv2
@@ -133,7 +133,7 @@
   cv2.destroyAllWindows()
   ```
 
-  <img src="https://github.com/dannylee93/Images/blob/master/matplotlib_line5.jpg?raw=true" style="zoom:67%;" />
+  <img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/matplotlib_line5.jpg?raw=true" style="zoom:67%;" />
 
 - 원그리기 : `cv2.circle(img, center, radius, color[, thickness, lineType])`
 
@@ -158,7 +158,7 @@
   plt.show
   ```
 
-  ![](https://github.com/dannylee93/Images/blob/master/matplotlib_line6.jpg?raw=true)
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/matplotlib_line6.jpg?raw=true)
 
 - 텍스트 그리기 : `cv2.putText(image, text, position, font_type, font_scale, color)`
 
@@ -179,7 +179,7 @@
   cv2.destroyAllWindows()
   ```
 
-  <img src="https://github.com/dannylee93/Images/blob/master/matplotlib_line7.jpg?raw=true" style="zoom:67%;" />
+  <img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/matplotlib_line7.jpg?raw=true" style="zoom:67%;" />
 
 
 

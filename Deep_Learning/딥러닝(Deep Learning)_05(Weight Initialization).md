@@ -20,13 +20,13 @@
 
   아래 그래프 처럼 활성화 값이 주로 0과 1쪽에 분포되어, 함수 미분 값이 0에 가까워진다. 역전파의 기울기 값은 점점 사라지며 층이 깊을수록 기울기는 더 사라진다.
 
-  ![](https://github.com/dannylee93/Images/blob/master/Sigmoid(std_1).jpg?raw=true)
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Sigmoid(std_1).jpg?raw=true)
 
 - `표준편차가 0.01`
 
   기울기가 사라지는 Gradient Vanishing 문제는 없지만 중앙의 0.5 주변에 치우쳐져 여러 퍼셉트론을 사용할 이유가 없어진다.(100개가 다 똑같은 Output을 보여주면 의미가 없으니까)
 
-  ![](https://github.com/dannylee93/Images/blob/master/Sigmoid(std_0.01).jpg?raw=true)
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Sigmoid(std_0.01).jpg?raw=true)
 
 
 
@@ -57,7 +57,7 @@ for i in range(hidden_layer_size):
     activations[i] = z
 ```
 
-![](https://github.com/dannylee93/Images/blob/master/Xavier_Ini.jpg?raw=true)
+![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Xavier_Ini.jpg?raw=true)
 
 > 그래프 분포를 보면 앞의 두 방식보다 고르게 분포되어 학습이 효율적으로 이루어 질 수 있음을 엿볼 수 있다. 같은 시그모이드 함수를 활용했음에도 표현력문제가 생기지 않는다.
 
@@ -85,27 +85,27 @@ for i in range(hidden_layer_size):
 
 #### (1) Sigmoid 함수 - Std 0.01, Xavier, He
 
-![](https://github.com/dannylee93/Images/blob/master/Sigmoid_Standard(std_0.01).jpg?raw=true)
+![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Sigmoid_Standard(std_0.01).jpg?raw=true)
 
-![](https://github.com/dannylee93/Images/blob/master/Sigmoid_Xavier(std_0.01).jpg?raw=true)
+![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Sigmoid_Xavier(std_0.01).jpg?raw=true)
 
-![](https://github.com/dannylee93/Images/blob/master/Sigmoid_HE(std_0.01).jpg?raw=true)
+![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Sigmoid_HE(std_0.01).jpg?raw=true)
 
 #### (2) ReLU 함수 - Std 0.01, Xavier, He
 
-![](https://github.com/dannylee93/Images/blob/master/ReLU_Standard(std_0.01).jpg?raw=true)
+![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/ReLU_Standard(std_0.01).jpg?raw=true)
 
-![](https://github.com/dannylee93/Images/blob/master/ReLU_Xavier(std_0.01).jpg?raw=true)
+![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/ReLU_Xavier(std_0.01).jpg?raw=true)
 
-![](https://github.com/dannylee93/Images/blob/master/ReLU_HE(std_0.01).jpg?raw=true)
+![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/ReLU_HE(std_0.01).jpg?raw=true)
 
 #### (1) Tanh 함수 - Std 0.01, Xavier, He
 
-![](https://github.com/dannylee93/Images/blob/master/Tanh_Standard(std_0.01).jpg?raw=true)
+![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Tanh_Standard(std_0.01).jpg?raw=true)
 
-![](https://github.com/dannylee93/Images/blob/master/Tanh_Xavier(std_0.01).jpg?raw=true)
+![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Tanh_Xavier(std_0.01).jpg?raw=true)
 
-![](https://github.com/dannylee93/Images/blob/master/Tanh_HE(std_0.01).jpg?raw=true)
+![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Tanh_HE(std_0.01).jpg?raw=true)
 
 
 

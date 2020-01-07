@@ -20,7 +20,7 @@
 
   ![](http://sanghyukchun.github.io/images/post/88-5.png)
 
-  ![](https://github.com/dannylee93/Images/blob/master/BN_image.jpg?raw=true)
+  ![](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/BN_image.jpg?raw=true)
 
 - 파란색 선이 배치 정규화후의 정확성 결과이며, 학습이 빠를 뿐 아니라 가중치 초기값의 영향을 받지 않는 것도 확인할 수있다.
 
