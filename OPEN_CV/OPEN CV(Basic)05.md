@@ -86,42 +86,40 @@
     - `blockSize` : 임계처리를 적용할 영역의 크기
     - `C` : 평균이나 가중평균에서 차감할 값
 
-  
-  
-  ```python
-  from skimage.data import page
-  
-  img = page()
-  
-  maxval = 255
-  thresh = 126
-  ret, th1 = cv2.threshold(img, thresh, maxval, cv2.THRESH_BINARY)
-  
-  k = 15
-  C = 20
-  
-  th2 = cv2.adaptiveThreshold(
-      img, maxval, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, k, C)
-  th3 = cv2.adaptiveThreshold(
-      img, maxval, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, k, C)
-  
-  images = [img, th1, th2, th3]
-  titles = ['원본이미지', '임계처리', '평균 적응임계처리', '가우시안블러 적응임계처리']
-  
-  plt.figure(figsize=(8, 5))
-  for i in range(4):
-      plt.subplot(2, 2, i+1)
-      plt.imshow(images[i], 'gray')
-      plt.title(titles[i])
-      plt.axis('off')
-  
-  plt.tight_layout()
-plt.show()
-  ```
+```python
+from skimage.data import page
 
-  ![3](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering2)02.jpg?raw=true)
-  
-  > 위 이미지와 같이 적용 방법에 따라 다르게 처리가 되는 것을 볼 수 있다.
+img = page()
+
+maxval = 255
+thresh = 126
+ret, th1 = cv2.threshold(img, thresh, maxval, cv2.THRESH_BINARY)
+
+k = 15
+C = 20
+
+th2 = cv2.adaptiveThreshold(
+    img, maxval, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, k, C)
+th3 = cv2.adaptiveThreshold(
+    img, maxval, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, k, C)
+
+images = [img, th1, th2, th3]
+titles = ['원본이미지', '임계처리', '평균 적응임계처리', '가우시안블러 적응임계처리']
+
+plt.figure(figsize=(8, 5))
+for i in range(4):
+    plt.subplot(2, 2, i+1)
+    plt.imshow(images[i], 'gray')
+    plt.title(titles[i])
+    plt.axis('off')
+
+plt.tight_layout()
+plt.show()
+```
+
+![3](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering2)02.jpg?raw=true)
+
+> 위 이미지와 같이 적용 방법에 따라 다르게 처리가 되는 것을 볼 수 있다.
 
 
 
