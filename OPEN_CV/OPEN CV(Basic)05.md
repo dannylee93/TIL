@@ -35,8 +35,10 @@
       - `THRESH_TOZERO` : 기준값을 넘으면 원래값 아니면 0
       - `THRESH_TOZERO_INV` : 기준값을 넘으면 0 아니면 원래값
   
+  
+
   ```python
-import cv2
+  import cv2
   from skimage.data import coins
   
   img = coins()
@@ -62,9 +64,9 @@ import cv2
   plt.tight_layout(pad=0.7)
   plt.show()
   ```
-  
-  ![2](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering2)01.jpg?raw=true)
 
+  ![2](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering2)01.jpg?raw=true)
+  
   > 위에 `threshold` 코드에서는 기준 값을 넘을 때 주는 최대값(maxval)을 255로 주었다. 기준값은 그 값의 절반으로 객체를 임의 지정. 
 >
   > 주의 해서 볼 점은 각 인수에서 _INV가 들어가면 이미지가 역전되어 보이는 것을 알 수 있다.
@@ -85,6 +87,8 @@ import cv2
     - `blockSize` : 임계처리를 적용할 영역의 크기
     - `C` : 평균이나 가중평균에서 차감할 값
 
+  
+  
   ```python
   from skimage.data import page
   
@@ -113,11 +117,11 @@ import cv2
       plt.axis('off')
   
   plt.tight_layout()
-  plt.show()
+plt.show()
   ```
 
   ![3](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering2)02.jpg?raw=true)
-
+  
   > 위 이미지와 같이 적용 방법에 따라 다르게 처리가 되는 것을 볼 수 있다.
 
 
