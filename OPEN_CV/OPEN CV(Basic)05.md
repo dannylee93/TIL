@@ -68,9 +68,8 @@
   ![2](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering2)01.jpg?raw=true)
   
   > 위에 `threshold` 코드에서는 기준 값을 넘을 때 주는 최대값(maxval)을 255로 주었다. 기준값은 그 값의 절반으로 객체를 임의 지정. 
->
+  >
   > 주의 해서 볼 점은 각 인수에서 _INV가 들어가면 이미지가 역전되어 보이는 것을 알 수 있다.
-
  ##### (2) 적응 임계처리 :
 
 - 일반 임계처리는 이미지 전체에 **하나의 기준 값**을 적용한다. `적응임계처리`는 일정한 **영역 내의 이웃한 픽셀들의 값들을 이용**하여 해당 영역에 적용할 기준 값을 자체적으로 생산한다.
@@ -267,11 +266,11 @@ plt.show()
   cv2.destroyAllWindows()
   ```
 
+  <img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering2)09.JPG?raw=true" alt="11" style="zoom: 80%;" />
   
+  > 아래 코드를 적용했을 때 결과이다. 엣지가 뚜렷하게 나오는 것을 알 수 있다.
 
-<img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/OpenCV(Filtering2)09.JPG?raw=true" alt="11" style="zoom: 80%;" />
 
->아래 코드를 적용했을 때 결과이다. 엣지가 뚜렷하게 나오는 것을 알 수 있다.
 
 ##### (4) 캐니 엣지(Canny edges):
 
@@ -291,10 +290,10 @@ plt.show()
 
 - `edges = cv2.Canny(img, threshold1, threshold2, [, edges, apertureSize, L2gardient])`
 
-  - img : 입력 영상, Numpy 배열
-  - threshold1, threshold2 : 스레시홀딩에 사용할 최소, 최대값
-  - apertureSize : 마스크에 사용할 커널 크기
-  - L2gradient : 그레이디언트 강도를 구할 방식 지정 플레그
+  - `img` : 입력 영상, Numpy 배열
+  - `threshold1, threshold2` : 스레시홀딩에 사용할 최소, 최대값
+  - `apertureSize` : 마스크에 사용할 커널 크기
+  - `L2gradient` : 그레이디언트 강도를 구할 방식 지정 플레그
     - True : 제곱합의 루트
     - False : 절대값 합
 
