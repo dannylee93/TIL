@@ -489,7 +489,8 @@ plt.show()
 
 ## 참고한 자료
 
-- 강사님 자료 (이미지분석 인공지능 서비스 개발 / 최진영 강사님)
+- 도서 참고
+  - 파이썬으로 만드는 Open CV 프로젝트(이세우 지음 / 프로그래밍인사이트)
 - 사이트 참고
   - 데이터사이언스스쿨(https://datascienceschool.net/view-notebook/c4121d311aa34e6faa84f62ef06e43b0/)
   - 소펠 필터 관련 정보(https://boysboy3.tistory.com/56)

@@ -314,7 +314,8 @@
 
 ## 참고한 자료
 
-- 강사님 자료 (이미지분석 인공지능 서비스 개발 / 최진영 강사님)
+- 도서 참고
+  - 파이썬으로 만드는 Open CV 프로젝트(이세우 지음 / 프로그래밍인사이트)
 - 사이트 참고
   - 데이터사이언스스쿨(https://datascienceschool.net/view-notebook/f9f8983941254a34bf0fee42c66c5539/)
   - 이미지 컨투어 관련 정보(https://076923.github.io/posts/Python-opencv-21/)
