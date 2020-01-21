@@ -44,7 +44,7 @@
 
 *"필터는 Input Data 에서 특성을 판별하는 이진 분류의 값으로 나오게 되며, 그 특성을 가지고 있는지 없는지 여부를 알 수 있게 해준다."*
 
-![00](C:\Users\bruce0809\Desktop\이미지 저장 폴더\00.JPG)
+<img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/CNN_00.JPG?raw=true" alt="00" style="zoom:67%;" />
 
 > 원본 데이터에서 필터를 통해 값들을 만들어 내는데, 얼마나 많은 값들을 만들어 낼까
 
@@ -52,7 +52,7 @@
 
   위 이미지의 질문처럼 얼마나 많은 값들을 만들어 낼지 컨트롤 하는 하이퍼 파라미터 중 하나가 Stride 이다. 쉽게 말하면, 필터가 이동하면서 특징 데이터들을 추출하는데, 얼마나 이동하면서 볼지 정하는 것이다.(default == 1)
 
-  <img src="C:\Users\bruce0809\Desktop\이미지 저장 폴더\01.JPG" alt="01" style="zoom:67%;" />
+  <img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/CNN_01.JPG?raw=true" alt="01" style="zoom: 67%;" />
 
   > 굵은 글씨로 적혀진 공식으로 Output의 데이터 크기를 빠르게 가늠할 수 있다. 이렇게 해 필터을 적용해서 얻은 결과를 Feature map 또는 Activation map 이라고 한다.
 
@@ -72,7 +72,7 @@
 
 
 
-<img src="C:\Users\bruce0809\Desktop\이미지 저장 폴더\02.JPG" alt="02" style="zoom:50%;" />
+<img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/CNN_02.JPG?raw=true" alt="02" style="zoom: 67%;" />
 
 > 상단의 이미지는 6개의 (5X5X3) 필터를 사용했다. Filter와 Stride를 고려하여 (28X28X6)의 Activation maps 가 생긴 것을 볼 수 있다.
 
@@ -104,7 +104,7 @@
 
 
 
-<img src="C:\Users\bruce0809\Desktop\이미지 저장 폴더\03.JPG" alt="03" style="zoom:67%;" />
+<img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/CNN_03.JPG?raw=true" alt="03" style="zoom:67%;" />
 
 > Resize를 통해서 샘플링 하는 과정을 Pooling이라 한다. 
 
