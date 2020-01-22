@@ -145,6 +145,84 @@ sigmoid나 ReLU가 이산분류(참 또는 거짓을 분류)하는 함수라면,
 
 ## Tensorflow로 실습해보기 
 
+> Python 3.+ 환경에서 Tensorflow는 어떻게 구현되는지 코드를 통해서 이론을 더 파보자.
+
+
+
+### Example
+
+![img](https://lh4.googleusercontent.com/YYbqdBm6cO63vmTVP1acFGBc4KGtG9zHrgSlTa7HY9lChJ_He2outgiSE1EvXTMlp1Ei0n13e3dBAqvP4sGF4RLltuGD_B4FaAupUfQzy8_6NDewatx_iAsZ1-TDBMEk_Tn5aO6S5eo)
+
+> 상단의 이미지는 의료 빅데이터 분석 컨테스트 공모 중 폐암 진단 알고리즘 개발한 이근영 참가자의 알고리즘이다.
+>
+> 이론에서 처럼 Input으로 들어온 데이터는 Filtering과 pooling 과정을 거쳐 특성을 추출하고 , 이 과정을 거친 값들은 Fully Connected layer 를 통하여 최종 분류를 하게 된다.
+
+
+
+### View Codes
+
+![img](https://lh3.googleusercontent.com/wWFYeEuwIPCpF7XB1asTYZZAo-f3Zwkjzq_O2ONaVVYSDrrqf94Iy5rE9Gju-khvqBLc2-KpskOiIY9SnDlAYLk_PsG6_oRDNPllf1fkEvLBOAUYY9YdIHfC5FsKB1mOkfyHaiYmHyA)
+
+> 넘파이 배열을 사용해서 임의의 숫자로 데이터에 컬러를 부여했다.
+
+
+
+![img](https://lh5.googleusercontent.com/iZOkJqF8t-xWeBDOmmnf_mZ5ebvbQEK4rtmfHaEg-WMMU6BpN4SbW_frx-DzzEECFpwUIif064yRcYe8AwdjAaq_eDRvHHwXHfYMg_hfkw-pX3e55uQfSJucqP9I440PvAkiMFij53E)
+
+- **주의 할 코드들:**
+  - Image = (`개수`, (`행`, `렬`), `채널 수`)
+  - Filter = (`(행, 렬)`, `채널 수` , `필터 개수`)
+    - 필터의 채널 수(차원) 은 이미지의 채널 수와 맞춰야 한다.(이미지 위에 출력된 shape의 값을 참고하자.)
+  - stride = [1, `1, 1`, 1]
+    - 1X1 로, 한칸씩 필터를 이동하면서 특징 추출을 하겠다는 뜻
+  - Padding = "SAME"
+    - 필터 사이즈와 상관없이 cov-layer의 결과가 원본 데이터의 크기(MxN)가 같게 테두리에 Padding을 넣어준다.
+    - 만약 Stride가 2라면, 크기가 절반으로 줄어든다.
+
+
+
+![img](https://lh4.googleusercontent.com/p8w2FiK1V2MWjQBDj2bYP_VHvl5S8cNP8VBvhKq2c-enowoNo0WDUbvU-z6RK0N52VVv9EzEKbTAR16ovCnxzMZ4ZdlasRbmvIYrrMDff3TVndy98m3v_dcWIx45xRe29ndrSdEdnOc)
+
+- max_pool : 여기서, ksize = [1, `2, 2`, 1] 라는 파라미터 안에 2X2는 필터 사이즈를 의미한다.
+
+![img](https://lh4.googleusercontent.com/Y928UX7na31aL5ccP2vnugAbzR_D8Ip5jOc0JOBQrkJlChkJo6Oqq5DfDI5qYtxhvgFwF0ftbHzv15fJIjTZ2AM8vK4pZu2nM54Rrp1YXeSk9t4M9kF4e-adPtzBfcwgOq7cmQp3l88)
+
+
+
+### View Codes (MNIST)
+
+> MNIST 손글씨 데이터를 통해서 코드 예시중 한번 더 짚어볼 코드를 살펴보자.
+
+
+
+![img](https://lh3.googleusercontent.com/2Ifs9vBXnxv6OJIRD4hQGpsDW6JfxVPFkbKePlN6cnnWFFl86YAgmhfEVnBeahvWn974JWo1iD6Rx4yCe4BtqAyLQPcxxhcTdIRHZu1Bjj5bOgQU7xJVjfGBDKjLSwV8howi0cnAK3k)
+
+> MNIST image loading
+
+- `reshape(-1, 28, 28, 1)`:
+
+  `-1` 은 알아서 이미지의 개수를 맞춰줘라 라는 뜻의 의미이다. `28X28`은 MNIST 예제의 데이터 크기로 널리 알려져있다. 마지막 `1`은 채널 수(흑백)이다.
+
+
+
+![img](https://lh6.googleusercontent.com/_Cp-XO8PIac2f3XYGFMfdJRYIPUAPyZLOyHZEFh7Vc510Tdf60f38zSTux7op7sXOXCSfPlnMN6TthsCPyLW7WEwwcoeTjqAJALQRfB9DjHuY2UkLhDLSXX7JXtsgVFCSngAsvwzzIg)
+
+> Convolutional Layer를 쌓는 과정이다.
+
+- w = variable코드 중,,,
+
+  `[3, 3, 1, 5]` 라는 인자 값의 의미를 살펴볼 때, 마지막 `5`는 필터의 개수를 나타낸다.
+
+
+
+![img](https://lh6.googleusercontent.com/mSi3Nm2uORtUGZgVaZEDzvlNaSBwbrsXmMFaRjnDLzrdykeeFxwrqQgGwZDbk_DtwjplJZX2E2N9tBI2a5sdAWJuSTYo6rGT_Qz7UoJ0g_aANpuliYJ4UKazHQImACSzLGHI7cpEmWU)
+
+> Max Pooling 하는 과정에 대한 코드 이다.
+
+
+
+
+
 
 
 
