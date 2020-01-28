@@ -14,9 +14,15 @@
 
 ![Forking00](https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Forking00.jpg?raw=true)
 
+
+
 **(2) 내 컴퓨터(로컬 저장소)로 `Clone` 한다.**
 
 <img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Github_Project_01.JPG?raw=true" alt="01" style="zoom:80%;" />
+
+
+
+**(3) 오리지널 저장소(포크 전 주소)를 'upstream'으로 설정**
 
 ```shell
 # 내 컴퓨터(로컬 저장소에 Fork된 내 저장소를 Clone)
@@ -28,6 +34,8 @@ $git cd [브랜치 명]
 # 오리지널 저장소를 upstream으로 저장
 $git remote add upstream [Fork했던 오리지널 저장소의 주소]
 ```
+
+> 2번 과 3번 순서 명령어 작성 순서
 
 
 
@@ -44,7 +52,9 @@ $ git checkout -b [develop]
 
 **(5) Pull Request로 코드 리뷰 진행**
 
-![](C:\Users\student\Desktop\00.jpg)
+<img src="https://github.com/dannylee93/Images/blob/master/Image%20Analysis%20A.I/Pull_Request00.jpg?raw=true" style="zoom:67%;" />
+
+
 
 **(6) PR 요청이 받아들여지면 Merge 진행**
 
