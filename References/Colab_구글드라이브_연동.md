@@ -88,4 +88,4 @@ drive.mount('/gdrive', force_remount=True)
 
 ## References
 
-- [캐라스 코리아 김태영님의 블로그](https://tykimos.github.io/2019/01/22/colab_getting_started/)
+- [케라스 코리아 김태영님의 블로그](https://tykimos.github.io/2019/01/22/colab_getting_started/)
