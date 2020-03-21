@@ -5,7 +5,7 @@
 
 <br>
 
-### Crawling
+## Crawling
 
 Add Comment soon
 
@@ -25,7 +25,7 @@ for nums in range(1, 1342, +1):
 
 <br>
 
-### Deep_Learning
+## Deep_Learning
 
 Add Comment soon
 
@@ -38,7 +38,7 @@ Add Comment soon
 
 <br>
 
-### Git&Github
+## Git&Github
 
 Add Comment soon
 
@@ -50,7 +50,7 @@ Add Comment soon
 
 <br>
 
-### OPEN_CV
+## OPEN_CV
 
 Add Comment soon
 
@@ -78,7 +78,7 @@ print(add)
 
 <br>
 
-### Practice_CodingChallenges
+## Practice_CodingChallenges
 
 Add comment soon
 
@@ -103,13 +103,13 @@ for b in range(1, 10001):   # 1~10000까지 숫자에서 뽑은게
 
 <br>
 
-### Python_Basic
+## Python_Basic
 
 Add comment soon
 
 <br>
 
-### References
+## References
 
 Add comment soon
 
