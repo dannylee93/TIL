@@ -1,5 +1,5 @@
 # Today I Learned
-> Summarize what I Learned today to record the process of my development for becoming an Data-related Expert
+> Summarize what I Learned today to record the process of my development for becoming a Data-related Expert
 
 <p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8FJR6cjcfy0w3APFLG9kPQaHB6u-b3njRrYJ1rVNZ4xAwrZ3l"/></p>
 
