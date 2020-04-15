@@ -231,7 +231,7 @@ sigmoid나 ReLU가 이산분류(참 또는 거짓을 분류)하는 함수라면,
 
 - [김성훈 교수님의 모두를 위한 딥러닝] https://hunkim.github.io/ml/
 
-- [조대협의 블로그] https://bcho.tistory.com/1149 
+- [조대협님 블로그] https://bcho.tistory.com/1149 
 
 - [구글 텐서플로우 한글화된 공식문서]
 
