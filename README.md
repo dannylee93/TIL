@@ -3,11 +3,11 @@
 
 <p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8FJR6cjcfy0w3APFLG9kPQaHB6u-b3njRrYJ1rVNZ4xAwrZ3l"/></p>
 
-<br>
-
 ## Crawling
 
-Add Comment soon
+I studied Python libraries such as BeautifulSoup, Selenium, and Tesseract which are used with web crawling theories, and organized the codes that I actually used.
+
+### Exemplaries
 
 ```python
 # 2.크롤러 모델링
@@ -21,38 +21,38 @@ for nums in range(1, 1342, +1):
     td_data.append([item.get_text().strip() for item in table.select('td')])
 ```
 
-- **Reference Resources :** [새로비] https://engkimbs.tistory.com/
+> 공부한 이론들을 바탕으로 실전 활용했던 코드.
 
-<br>
+- **Reference Resources :** 
+  - [새로비](https://engkimbs.tistory.com/)
+  - [파이썬으로 웹 크롤러 만들기](http://www.yes24.com/Product/Goods/71047040)
 
 ## Deep_Learning
 
-Add Comment soon
+This is a folder that I organized while studying Deep Learning. In addition to the Deep Learning theory, Practical problem solving in programming environments such as class imbalance problem and GPU test were also summarized.
 
 <p align="center"><img src=https://camo.githubusercontent.com/8ddd25193f1e31e571129ec4b0b3fe4451e3ee67/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f3435332f312a353144304d7174714875336832765445356f4a2d37672e706e67></p>
 
 - **Reference Resources :** 
-  - 모두를 위한 머신러닝 & 딥러닝 https://hunkim.github.io/ml/
-  - 데이터 분석하는 문과생, 싸코 https://sacko.tistory.com/
-  - 조대협 님 블로그 https://bcho.tistory.com/1149
-
-<br>
+  - [모두를 위한 머신러닝 & 딥러닝]( https://hunkim.github.io/ml/)
+  - [데이터 분석하는 문과생, 싸코](https://sacko.tistory.com/)
+  - [조대협 님 블로그](https://bcho.tistory.com/1149)
 
 ## Git&Github
 
-Add Comment soon
+Git and Github are the places where I spent the most time on my first step as a data analyst. In This folder, I summarized the basic knowledge of Git and how to collaborate on projects through Github, as well as how to solve problems that might be encountered while using Git.
 
-<p align="center"><img src="https://evan-moon.github.io/2019/07/25/git-tutorial/thumbnail.png"></p>
+<p align="center"><img src="https://miro.medium.com/max/1100/1*0Jthz3j-RoN5KmGxjx5jZQ.png" style="zoom:67%;" /></p>
 
 - **Reference Resources :**
-  - Original :
-  - Translated :
-
-<br>
+  - Original : [Atlassian's Getting Git Right](https://www.atlassian.com/git)
+  - Translated : [lhy's blog](https://lhy.kr/)
 
 ## OPEN_CV
 
-Add Comment soon
+Open CV is the Python library that I need most to be a computer vision specialist. I summarized related to computer vision theories such as image transform , save image, drawing etc.
+
+### Exemplaries
 
 ```python
 # 브로드캐스팅과 형식캐스팅 한번에 실험하기
@@ -72,15 +72,19 @@ print(add)
  [4.5 6.5]]
 ```
 
+> Open CV 이론 중 데이터 연산과 관련한 코드에 대한 예시이다.
+
 - **Reference Resources :** 
+  - [C#과 파이썬을 활용한 OpenCV 4 프로그래밍](https://wikibook.co.kr/opencv4/)
+  - [파이썬으로 만드는 OpenCV 프로젝트](http://www.yes24.com/Product/Goods/71534451)
 
 <p align='center'><img src=http://image.kyobobook.co.kr/images/book/large/669/l9791158391669.jpg><img src=http://image.kyobobook.co.kr/images/book/large/410/l9788966262410.jpg></p>
 
-<br>
-
 ## Practice_CodingChallenges
 
-Add comment soon
+Based on the questions presented on the Internet communities of coding challenges such as Baekjun and Programmers, I uploaded files of the algorithm-trained theorem.
+
+### Exemplaries
 
 ```python
 def d(n):                   # d(n)이라는 문제부터 정의한다.
@@ -101,17 +105,17 @@ for b in range(1, 10001):   # 1~10000까지 숫자에서 뽑은게
 # d(n) 이라는 함수를 정의한다 : a라는 곳에
 ```
 
-<br>
+> 백준 에서 출제한 코딩 챌린지 문제의 일부를 발췌 했다.
 
 ## Python_Basic
 
-Add comment soon
-
-<br>
+It is a space for practicing basic knowledge of Python-related libraries such as Numpy and Pandas, as well as files related to how to set up an integrated development environment to use Python, etc.
 
 ## References
 
-Add comment soon
+Various reference materials found while studying Python, Machine Learning, and Deep Learning, and theories that are frequently used or should be continuously viewed and referred to.
+
+### Exemplaries
 
 ```python
 from google.colab import drive
@@ -138,4 +142,3 @@ plt.rcParams['axes.grid'] = True
 ```
 
 > Change_default_matlplotlib.ipynb
-
