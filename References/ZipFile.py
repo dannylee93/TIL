@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[8]:
-
-
 # Zipfile 모듈로 압축파일 만들기
 
 # 1. 필요한 모듈 임포트(폴더 내 여러 파일 압축해야해서 조금 복잡해진다.)
