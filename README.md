@@ -21,7 +21,7 @@ for nums in range(1, 1342, +1):
     td_data.append([item.get_text().strip() for item in table.select('td')])
 ```
 
-> 공부한 이론들을 바탕으로 실전 활용했던 코드.
+> The codes I used in practice based on the theories studied.
 
 - **Reference Resources :** 
   - [새로비](https://engkimbs.tistory.com/)
@@ -72,7 +72,7 @@ print(add)
  [4.5 6.5]]
 ```
 
-> Open CV 이론 중 데이터 연산과 관련한 코드에 대한 예시이다.
+> An example of Open CV theory is a code related to data computation.
 
 - **Reference Resources :** 
   - [C#과 파이썬을 활용한 OpenCV 4 프로그래밍](https://wikibook.co.kr/opencv4/)
@@ -105,7 +105,7 @@ for b in range(1, 10001):   # 1~10000까지 숫자에서 뽑은게
 # d(n) 이라는 함수를 정의한다 : a라는 곳에
 ```
 
-> 백준 에서 출제한 코딩 챌린지 문제의 일부를 발췌 했다.
+> Extracted some of the coding challenge questions from Baekjun.
 
 ## Python_Basic
 
