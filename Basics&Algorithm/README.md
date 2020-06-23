@@ -6,7 +6,7 @@
 
 ## 📌파일 위치 와 내용
 
-- [**Basics_and_Algorithm_of_Python_00**]()
+- [**Basics_and_Algorithm_of_Python_00**](https://github.com/dannylee93/TIL/blob/master/Basics%26Algorithm/Basics_and_Algorithm_of_Python_00.ipynb)
   
   - 출력방식
     - 영문과 숫자 `,` `_` 로 이루어진다.
@@ -18,7 +18,7 @@
   - 조건문 if(분기문, 중첩문)
   - 반복문(for, while, break, continue)
   
-- [**Basics_and_Algorithm_of_Python_01**]()
+- [**Basics_and_Algorithm_of_Python_01**](https://github.com/dannylee93/TIL/blob/master/Basics%26Algorithm/Basics_and_Algorithm_of_Python_01.ipynb)
 
   - 반복문을 이용한 문제풀이
 
