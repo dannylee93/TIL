@@ -21,7 +21,9 @@
 - [**Basics_and_Algorithm_of_Python_01**](https://github.com/dannylee93/TIL/blob/master/Basics%26Algorithm/Basics_and_Algorithm_of_Python_01.ipynb)
 
   - 반복문을 이용한 문제풀이
-
-  - 중첩 반복문(2중 조건문)
+- 중첩 반복문(2중 조건문)
   - 문자열과 내장함수
   - 리스트와 내장함수
+  - 2차원 리스트 생성 및 접근
+  - 함수만들기
+  - 람다 함수
