@@ -3,6 +3,12 @@
 
 <p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8FJR6cjcfy0w3APFLG9kPQaHB6u-b3njRrYJ1rVNZ4xAwrZ3l"/></p>
 
+## Basics & Algorithms
+
+The records of Python basics and algorithms after taking online-course from Inflearn
+
+
+
 ## Crawling
 
 I studied Python libraries such as BeautifulSoup, Selenium, and Tesseract which are used with web crawling theories, and organized the codes that I actually used.
