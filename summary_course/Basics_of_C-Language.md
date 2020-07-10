@@ -154,3 +154,10 @@
 - Tools 라는 편의기능을 통해 테마, 폰트변경이 가능하다.
 - 명령 프롬프트 : X86 Native Tools 에서 해당 실행파일(.exe)로 실행할 수 있다.
 - VScode 는 VS 보다 조금 더 가벼운 프로그램이며 컴파일러(mingw64)와 익스텐션을 각각 따로 설치해야하는 단점이 있다.
+
+
+
+## References
+
+- *[홍정모 교수님의 따라하며 배우는 C언어](https://www.inflearn.com/course/following-c)*
+

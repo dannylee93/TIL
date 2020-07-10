@@ -132,3 +132,10 @@
 ## 기타
 
 - CPU 작동원리 리마인드
+
+- 
+
+## References
+
+- *[홍정모 교수님의 따라하며 배우는 C언어](https://www.inflearn.com/course/following-c)*
+
