@@ -227,6 +227,18 @@
 
 - 배열 Array : 같은 데이터 형을 여러개 사용할 때, 연결된 메모리를 덩어리로 가져온다면 훨씬 수월하게 사용할 수 있다.
 
+  ```c
+  int my_numbers[5];  //변수와 메모리 사이즈 할당
+  
+  my_numbers[0] = 1;
+  my_numbers[1] = 7;
+  my_numbers[2] = 2;
+  my_numbers[3] = 10;
+  my_numbers[4] = 1024;
+  ```
+
+  
+
 - 런타임 에러 Runtime Error :
 
   ```c
@@ -244,6 +256,49 @@
 
   - 메모리 크기보다 큰 인덱스를 넣으면 `Out of bound`
   - 변수만 따와서 임의의 리터럴 상수같은 값을 대입하면 `compile error` 발생한다.(왜나면, 변수명이 주소명 역할을 하기 때문. *나는 파이썬에서 리스트를 담은 변수느낌과 비슷하게 느꼈다.*)
+
+### For 반복문과 배열 및 함수
+
+- For 반복문과 배열 : 
+
+  ```c
+  ...(생략)
+  
+  printf("Enter %d numbers : ", SIZE);
+  
+  for (int i = 0; i < SIZE; ++i) {
+  	scanf("%d", &j);
+  	num_arr[i] = j;
+  };
+  
+  for (int i = 0; i < SIZE; ++i) {
+  	sum += num_arr[i];
+  };
+  printf("Sum = %d\n", sum);
+  ```
+
+  > 변수의 [index]를 잘 활용해서 반복문과 활용한다.
+
+- For 반복문과 함수 : 
+
+  ```c
+  //prototype, 링킹과정에서 해당 함수를 찾는다.
+  int compute_pow(int base, int exp); 
+  
+  //메인 함수
+  int main(){
+  	...
+  	
+  	compute_pow(base, exp);
+  	
+  	...
+  }
+  
+  //메인에서 사용할 함수 정의
+  int compute_pow(int base, int exp) {/*statement*/}
+  ```
+
+  > 따로 함수를 `def` 하고, 맨 위에 따로 Prototype을 선언할 수 있다.
 
 
 
