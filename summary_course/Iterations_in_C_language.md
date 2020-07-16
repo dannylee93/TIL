@@ -41,7 +41,16 @@
 
 관계 연산자는 데이터의 관계에 대해서 판단하는 연산자이다.
 
-![연산자 우선순위](https://lh3.googleusercontent.com/proxy/4AqFEhIF6CLApzHZxD0PNTcJJk2cT-K0xOpkNBDTESK7-9surN7UfJ-P3g8fWMGPnxfK2Lmo4AIUJVDalXWS1VmAxWDId6VH7M_35UQW4SuclRVdsHAxlAiVAGEwHwMLeY8Pvji86WkdWwrQ8EL_gtLB)
+| Relational Operators | exp                         |
+| -------------------- | --------------------------- |
+| <                    | is less than                |
+| <=                   | is less than or equal to    |
+| ==                   | is equal to                 |
+| >=                   | is greater than or equal to |
+| >                    | is greater than             |
+| !=                   | is not equal to             |
+
+![연산자 우선순위](https://github.com/dannylee93/Images/blob/master/Other/Operator_precedence.jpg?raw=true)
 
 - 실수 끼리 비교할 때는 주로 `!=`는 쓰지 않는다(값이 정확할 때 까지 `False`출력)
 
@@ -158,6 +167,8 @@
 
 - 비교를 통해 보는 **do-while문** :
 
+  ![](https://github.com/dannylee93/Images/blob/master/Other/dowhile.JPG?raw=true)
+  
   ```c
   int main() {
   	
@@ -183,9 +194,9 @@
   	printf("Good!");
   
   	return 0;
-  }
+}
   ```
-
+  
   > do를 먼저 선언한 후, while(탈출 조건)을 작성한다. 유의할 점은, do 선언 시 위의 기존코드와 같이 한번 실행한 후 while문이 발동된다는 것이다.
 
 
