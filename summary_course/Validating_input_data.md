@@ -43,6 +43,41 @@ C언어는 운영체제와 상관없이, 파일의 끝에 도착했을 때 언�
   ```
 
   > EOF 활용 코드 예시
+  
+- 텍스트 파일 읽기 :
+
+  ```c
+  #define _CRT_SECURE_NO_WARNINGS
+  #include <stdio.h>
+  #include <stdbool.h>
+  #include <stdlib.h>  //exit()
+  
+  void main(void) {
+  
+  	int c;
+  	FILE *file = NULL;  //file 이라는 변수 앞에 *기호는 포인터라는 의미. 주소가 저장됨.
+  	char file_name[] = "my_file.txt";
+  
+  	file = fopen(file_name, "r");
+  	if (file == NULL)
+  	{
+  		printf("Failed to open file.\n");
+  		exit(1);  //오류코드 같이 알려주면서 프로그램을 강제종료한다.
+  	}
+  
+  	while ((c=getc(file)) != EOF)
+  	{
+  		putchar(c);
+  	}
+  	fclose(file);
+  
+  }
+  ```
+
+  - `FILE` : 파일 스트림을 다룰 수 있는 어떤 정보가 저장된다. (`*` 기호는 포인터를 의미)
+  - `exit()` : `(임의의 오류코드)` 를 넣으면 해당 조건일 때 오류코드를 알려주며 프로그램을 강제 종료한다.
+  - `fopen(변수 , __)` : `__` 에는 `r` (읽기) 또는 `w` (저장)이 들어갈 수 있다.
+  - `fclose()` : 프로그램이 파일을 다 사용했다고 깔끔하게 명시하기 위해.
 
 
 
@@ -129,5 +164,5 @@ C언어는 운영체제와 상관없이, 파일의 끝에 도착했을 때 언�
 ## References
 
 - [홍정모 교수님의 따라하며 배우는 C언어](https://www.inflearn.com/course/following-c)
-- [TCP SCHOOL](http://tcpschool.com/c)
+- [TCP SCHOOL](http://tcpschool.com/c/intro)
 
